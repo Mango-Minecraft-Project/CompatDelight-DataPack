@@ -24,7 +24,7 @@ def get_files(type):
 
 def get_version() -> str:
     """get version from src/main/META-INF/mods.toml"""
-    with open(CWD / "src/main/META-INF/mods.toml", "rb") as file:
+    with open(CWD / "src/main/META-INF/neoforge.mods.toml", "rb") as file:
         return tomllib.load(file)["mods"][0]["version"]
 
 
@@ -36,11 +36,11 @@ def get_output_filename(type):
     """
     match type:
         case "data_pack":
-            return "Create_Mortar_Mango_Edition-{version}-data.zip"
+            return "Mango_Compat_Delight-{version}-data.zip"
         case "resource_pack":
-            return "Create_Mortar_Mango_Edition-{version}-resource.zip"
+            return "Mango_Compat_Delight-{version}-resource.zip"
         case "mod":
-            return "Create_Mortar_Mango_Edition-{version}-mod.jar"
+            return "Mango_Compat_Delight-{version}-mod.jar"
     return ""
 
 
@@ -69,11 +69,11 @@ def package(type):
 
 
 def main():
-    # package("data_pack")
-    # package("resource_pack")
-    # package("mod")
+    package("data_pack")
+    package("mod")
     ...
 
 
 if __name__ == "__main__":
+    import generator
     main()

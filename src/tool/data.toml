@@ -1,0 +1,38 @@
+[recipe.strip]
+log = [
+  "ars_nouveau:blue_archwood",
+  "ars_nouveau:red_archwood",
+  "ars_nouveau:purple_archwood",
+  "ars_nouveau:green_archwood",
+  "integrateddynamics:menril",
+  "occultism:otherworld",
+]
+wood = [
+  "ars_nouveau:blue_archwood",
+  "ars_nouveau:red_archwood",
+  "ars_nouveau:purple_archwood",
+  "ars_nouveau:green_archwood",
+  "integrateddynamics:menril",
+  "occultism:otherworld",
+]
+[recipe.return_to_planks]
+door = [
+  "ars_nouveau:archwood",
+  "integrateddynamics:menril",
+  "occultism:otherworld",
+  "snowysprint_gingerbread",
+  ["immsersiveengineering:treated", "immersiveengineering:treated_wood_horizontal"],
+]
+trapdoor = [
+  "ars_nouveau:archwood",
+  "integrateddynamics:menril",
+  "occultism:otherworld",
+  "snowysprint_gingerbread",
+  ["immsersiveengineering:treated", "immersiveengineering:treated_wood_horizontal"],
+]
+sign = [
+  "occultism:otherworld",
+]
+hanging_sign = [
+  "occultism:otherworld",
+]
